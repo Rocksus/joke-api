@@ -4,6 +4,12 @@ const (
 	defaultLang = "en"
 )
 
+var jokeCategories = map[string]bool{
+	"general":     true,
+	"knock-knock": true,
+	"programming": true,
+}
+
 type Joke struct {
 	ID        int64  `json:"id"`
 	Category  string `json:"category"`

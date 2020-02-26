@@ -103,6 +103,9 @@ func InitRandomHandler() http.HandlerFunc {
 		if vars["category"] != "" {
 			jokeCategory = vars["category"]
 		}
+		if !jokeCategories[jokeCategory] {
+			jokeCategory = "all"
+		}
 
 		keys := r.URL.Query()
 		lang := keys.Get("lang")
