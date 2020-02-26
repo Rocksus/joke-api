@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Rocksus/joke-api/internal/repository/joke"
+	"github.com/Rocksus/joke-api/joke"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
 )
