@@ -1,5 +1,9 @@
 package joke
 
+const (
+	defaultLang = "en"
+)
+
 type Joke struct {
 	ID        int64  `json:"id"`
 	Category  string `json:"category"`

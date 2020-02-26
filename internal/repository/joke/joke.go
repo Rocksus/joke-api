@@ -28,6 +28,8 @@ func Load(path string) {
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 	json.Unmarshal(byteValue, &jokeRaw)
 
+	jokes = make(map[int64]*Joke, len(jokeRaw))
+
 	for _, v := range jokeRaw {
 		jokes[v.ID] = &Joke{
 			ID:        v.ID,
@@ -66,8 +68,8 @@ func InitHandler() http.HandlerFunc {
 				w.WriteHeader(http.StatusInternalServerError)
 			}
 
-			fmt.Fprintf(w, string(byteData))
 			w.WriteHeader(http.StatusOK)
+			fmt.Fprintf(w, string(byteData))
 
 		} else {
 			data := jokes[id]
@@ -87,8 +89,8 @@ func InitHandler() http.HandlerFunc {
 				w.WriteHeader(http.StatusInternalServerError)
 			}
 
-			fmt.Fprintf(w, string(byteData))
 			w.WriteHeader(http.StatusOK)
+			fmt.Fprintf(w, string(byteData))
 		}
 
 	}
@@ -104,6 +106,9 @@ func InitRandomHandler() http.HandlerFunc {
 
 		keys := r.URL.Query()
 		lang := keys.Get("lang")
+		if lang == "" {
+			lang = defaultLang
+		}
 
 		// Create a priority list, if anyone knows a more
 		// efficient way of doing this, please do make a PR
@@ -113,7 +118,7 @@ func InitRandomHandler() http.HandlerFunc {
 		var jokeData *Joke
 		for i := int(0); !found && i < len(pList); i++ {
 			if jokes[int64(pList[i])].Category == jokeCategory || jokeCategory == "all" {
-				if lang == "" || jokes[int64(pList[i])].Language == lang {
+				if jokes[int64(pList[i])].Language == lang {
 					found = true
 					jokeData = jokes[int64(pList[i])]
 				}
@@ -136,8 +141,7 @@ func InitRandomHandler() http.HandlerFunc {
 			w.WriteHeader(http.StatusInternalServerError)
 		}
 
-		fmt.Fprintf(w, string(byteData))
-
 		w.WriteHeader(http.StatusOK)
+		fmt.Fprintf(w, string(byteData))
 	}
 }
