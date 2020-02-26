@@ -2644,5 +2644,12 @@
     "setup": "Why does Norway have barcodes on their battleships?",
     "punchline": "So when they get back to port, they can Scandinavian.",
     "lang": "en"
+  },
+  {
+    "id":379,
+    "category": "general",
+    "setup": "You know what the loudest pet you can get is?",
+    "punchline": "A trumpet.",
+    "lang": "en"
   }
 ]
