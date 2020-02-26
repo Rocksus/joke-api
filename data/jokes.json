@@ -2646,10 +2646,17 @@
     "lang": "en"
   },
   {
-    "id":379,
+    "id": 379,
     "category": "general",
     "setup": "You know what the loudest pet you can get is?",
     "punchline": "A trumpet.",
+    "lang": "en"
+  },
+  {
+    "id": 380,
+    "category": "general",
+    "setup": "I'm only familiar with 25 letters in the English language.",
+    "punchline": "I don't know why.",
     "lang": "en"
   }
 ]
