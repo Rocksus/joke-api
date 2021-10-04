@@ -2658,5 +2658,19 @@
     "setup": "I'm only familiar with 25 letters in the English language.",
     "punchline": "I don't know why.",
     "lang": "en"
+  },
+  {
+    "id": 381,
+    "category": "general",
+    "setup": "What kind of shoes do ninjas wear?",
+    "punchline": "Sneak-ers.",
+    "lang": "en"
+  },
+  {
+    "id": 382,
+    "category": "general",
+    "setup": "What is Beethoven's favorite fruit?",
+    "punchline": "A ba-na-na-naaaa.",
+    "lang": "en"
   }
 ]
