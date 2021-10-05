@@ -69,7 +69,7 @@ func InitHandler() http.HandlerFunc {
 			}
 
 			w.WriteHeader(http.StatusOK)
-			fmt.Fprintf(w, string(byteData))
+			fmt.Fprintf(w, string(byteData)+"\n")
 
 		} else {
 			data := jokes[id]
@@ -90,7 +90,7 @@ func InitHandler() http.HandlerFunc {
 			}
 
 			w.WriteHeader(http.StatusOK)
-			fmt.Fprintf(w, string(byteData))
+			fmt.Fprintf(w, string(byteData)+"\n")
 		}
 
 	}
@@ -145,6 +145,6 @@ func InitRandomHandler() http.HandlerFunc {
 		}
 
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, string(byteData))
+		fmt.Fprintf(w, string(byteData)+"\n")
 	}
 }
