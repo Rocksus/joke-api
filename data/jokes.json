@@ -2672,5 +2672,12 @@
     "setup": "What is Beethoven's favorite fruit?",
     "punchline": "A ba-na-na-naaaa.",
     "lang": "en"
+  },
+  {
+    "id": 383,
+    "category": "general",
+    "setup": "An Irishman walks into a bar",
+    "punchline": "...",
+    "lang": "en"
   }
 ]
