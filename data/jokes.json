@@ -2679,5 +2679,40 @@
     "setup": "An Irishman walks into a bar",
     "punchline": "...",
     "lang": "en"
+  },
+  {
+    "id": 384,
+    "category": "general",
+    "setup": "Biology teacher: \"What do you call a passive carbohydrates?\"",
+    "punchline": "Student: \"A couch potato.\"",
+    "lang": "en"
+  },
+  {
+    "id": 385,
+    "category": "general",
+    "setup": "Oh no! A giant tree is destroying the earth!",
+    "punchline": "I guess it's the ent of the world.",
+    "lang": "en"
+  },
+  {
+    "id": 386,
+    "category": "general",
+    "setup": "Do you know what the police say when they see Sleeping Beauty?",
+    "punchline": "You're under a rest",
+    "lang": "en"
+  },
+  {
+    "id": 387,
+    "category": "general",
+    "setup": "How can you make that triangle blush?",
+    "punchline": "By calling it acute triangle.",
+    "lang": "en"
+  },
+  {
+    "id": 388,
+    "category": "programming",
+    "setup": "If you have a bug and you fix it, how many do you have left?",
+    "punchline": "More than one.",
+    "lang": "en"
   }
 ]
