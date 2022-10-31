@@ -2679,5 +2679,12 @@
     "setup": "An Irishman walks into a bar",
     "punchline": "...",
     "lang": "en"
+  },
+  {
+    "id": 384,
+    "category": "general",
+    "setup": "You don't need a parachute to go skydiving.",
+    "punchline": "You need a parachute to go skydiving twice.",
+    "lang": "en"
   }
 ]
